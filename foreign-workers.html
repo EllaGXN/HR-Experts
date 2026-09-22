@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foreign Workforce & Visa Services — HR Experts</title>
+<meta name="description" content="HR Experts recruits foreign specialists for Mongolian employers and manages the work-permit and visa process end to end, from application to arrival.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/img/favicon-512.png" sizes="512x512" type="image/png">
+<link rel="apple-touch-icon" href="assets/img/favicon-180.png">
+<meta name="theme-color" content="#16233F">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo"><img src="assets/img/logo-white.png" alt="HR Experts" width="140" height="145"></a>
+    <nav class="nav">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="services.html" data-i18n="nav.services">Services</a>
+      <a href="foreign-workers.html" class="active" data-i18n="nav.fw">Foreign Workers</a>
+      <a href="contact.html" data-i18n="nav.contact">Contact Us</a>
+    </nav>
+    <div class="header-right">
+      <div class="lang-toggle">
+        <button data-lang="en">EN</button>
+        <button data-lang="mn">МН</button>
+      </div>
+      <a href="#employer-form" class="btn btn-primary" data-i18n="nav.cta">Request Staff</a>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="crumb"><a href="index.html" data-i18n="nav.home">Home</a> / <span data-i18n="fw.crumb">Foreign Workers</span></div>
+    <h1 data-i18n="fw.h1">Foreign Workforce & Visa Services</h1>
+    <p data-i18n="fw.lead">We recruit foreign specialists for Mongolian employers and manage their work-permit and visa process from application to arrival.</p>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="max-width:760px;">
+    <div class="hero-eyebrow" style="color:var(--brass-dark)" data-i18n="fw.intro.eyebrow">How it works</div>
+    <h2 data-i18n="fw.intro.h2">One team, both sides of the process</h2>
+    <p data-i18n="fw.intro.p">Whether you're a company that needs a specialist you can't hire locally, or a foreign professional looking for work in Mongolia, we manage sourcing, paperwork and compliance so nothing falls between the cracks.</p>
+  </div>
+</section>
+
+<section class="alt" id="process">
+  <div class="container">
+    <div class="section-head">
+      <div class="hero-eyebrow" style="color:var(--brass-dark)" data-i18n="fw.process.eyebrow">The process</div>
+      <h2 data-i18n="fw.process.h2">From request to arrival</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num"></div><div><h3 data-i18n="fw.step1.h">Needs assessment</h3><p data-i18n="fw.step1.p">We define the role, requirements and quota position with you before sourcing begins.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3 data-i18n="fw.step2.h">Sourcing & screening</h3><p data-i18n="fw.step2.p">Candidates are sourced through our international network and screened against your criteria.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3 data-i18n="fw.step3.h">Interviews & selection</h3><p data-i18n="fw.step3.p">We coordinate interviews and support you through final candidate selection.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3 data-i18n="fw.step4.h">Work permit application</h3><p data-i18n="fw.step4.p">We prepare and submit the work-permit application with the relevant labour authority on your behalf.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3 data-i18n="fw.step5.h">Visa application</h3><p data-i18n="fw.step5.p">Once the permit is approved, we coordinate the work-visa application with the candidate.</p></div></div>
+      <div class="step"><div class="num"></div><div><h3 data-i18n="fw.step6.h">Arrival & registration</h3><p data-i18n="fw.step6.p">We support arrival logistics, residence registration and onboarding into the role.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="jobs">
+  <div class="container">
+    <div class="section-head">
+      <div class="hero-eyebrow" style="color:var(--brass-dark)" data-i18n="fw.jobs.eyebrow">Open roles</div>
+      <h2 data-i18n="fw.jobs.h2">Current openings for foreign candidates</h2>
+      <p data-i18n="fw.jobs.p">Sample listings — contact us for the current, complete list of openings.</p>
+    </div>
+    <div class="job-filters" id="job-filters"></div>
+    <div id="job-list"></div>
+  </div>
+</section>
+
+<section class="alt" id="employer-form">
+  <div class="container" style="max-width:760px;">
+    <div class="hero-eyebrow" style="color:var(--brass-dark)" data-i18n="fw.employer.eyebrow">For employers</div>
+    <h2 data-i18n="fw.employer.h2">Request a foreign specialist</h2>
+    <p data-i18n="fw.employer.p">Tell us what you need and a consultant will get back to you within one business day.</p>
+
+    <div class="form-success" id="employer-success" data-i18n="fw.f.success">Thanks — your request has been received. A consultant will contact you within one business day.</div>
+
+    <form class="form-card" data-demo-form data-success="employer-success">
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.company">Company name</label><input type="text" required></div>
+        <div class="field"><label data-i18n="fw.f.contact">Contact person</label><input type="text" required></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.email">Work email</label><input type="email" required></div>
+        <div class="field"><label data-i18n="fw.f.phone">Phone number</label><input type="tel" required></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.industry">Industry</label><input type="text"></div>
+        <div class="field"><label data-i18n="fw.f.count">Number of workers needed</label><input type="number" min="1"></div>
+      </div>
+      <div class="field"><label data-i18n="fw.f.roles">Role(s) needed</label><input type="text" required></div>
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.country">Preferred source country (optional)</label><input type="text"></div>
+        <div class="field"><label data-i18n="fw.f.timeline">Timeline</label>
+          <select>
+            <option>ASAP</option>
+            <option>1–3 months</option>
+            <option>3–6 months</option>
+            <option>Flexible</option>
+          </select>
+        </div>
+      </div>
+      <div class="field"><label data-i18n="fw.f.message">Anything else we should know?</label><textarea rows="4"></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block" data-i18n="fw.f.submit">Submit request</button>
+      <p class="form-note">Demo form — connect this to your email or CRM to receive submissions.</p>
+    </form>
+  </div>
+</section>
+
+<section id="candidate-form">
+  <div class="container" style="max-width:760px;">
+    <div class="hero-eyebrow" style="color:var(--brass-dark)" data-i18n="fw.candidate.eyebrow">For candidates</div>
+    <h2 data-i18n="fw.candidate.h2">Register your CV</h2>
+    <p data-i18n="fw.candidate.p">Apply to a specific role above, or register generally and we'll reach out when a matching role opens.</p>
+
+    <div class="form-success" id="candidate-success" data-i18n="fw.f.successcv">Thanks — we've received your application and will be in touch if there's a match.</div>
+
+    <form class="form-card" data-demo-form data-success="candidate-success">
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.fullname">Full name</label><input type="text" required></div>
+        <div class="field"><label data-i18n="fw.f.nationality">Nationality</label><input type="text" required></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.email">Work email</label><input type="email" required></div>
+        <div class="field"><label data-i18n="fw.f.phone">Phone number</label><input type="tel" required></div>
+      </div>
+      <div class="field-row">
+        <div class="field"><label data-i18n="fw.f.role">Desired role / industry</label><input type="text" required></div>
+        <div class="field"><label data-i18n="fw.f.experience">Years of experience</label><input type="number" min="0"></div>
+      </div>
+      <div class="field">
+        <label data-i18n="fw.f.cv">CV / resume</label>
+        <input type="file" accept=".pdf,.doc,.docx">
+        <div class="hint" data-i18n="fw.f.cvhint">PDF or Word, up to 10MB.</div>
+      </div>
+      <div class="field"><label data-i18n="fw.f.coverletter">Cover message</label><textarea rows="4"></textarea></div>
+      <button type="submit" class="btn btn-primary btn-block" data-i18n="fw.f.submitcv">Submit application</button>
+      <p class="form-note">Demo form — connect this to your ATS or an email service to receive applications and files.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer" id="site-footer-include"></footer>
+
+<script src="assets/js/main.js"></script>
+<script src="assets/js/footer.js"></script>
+</body>
+</html>
